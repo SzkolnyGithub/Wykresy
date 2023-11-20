@@ -36,6 +36,8 @@ namespace wykresyBadowski4c
             this.b = new System.Windows.Forms.TextBox();
             this.monotonicznosc = new System.Windows.Forms.Label();
             this.rysuj = new System.Windows.Forms.Button();
+            this.a1 = new System.Windows.Forms.Label();
+            this.b1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.wykres)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,9 +64,9 @@ namespace wykresyBadowski4c
             // a
             // 
             this.a.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.a.Location = new System.Drawing.Point(72, 41);
+            this.a.Location = new System.Drawing.Point(43, 93);
             this.a.Name = "a";
-            this.a.Size = new System.Drawing.Size(25, 29);
+            this.a.Size = new System.Drawing.Size(91, 29);
             this.a.TabIndex = 3;
             // 
             // mZerowe
@@ -72,16 +74,16 @@ namespace wykresyBadowski4c
             this.mZerowe.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.mZerowe.Location = new System.Drawing.Point(12, 178);
             this.mZerowe.Name = "mZerowe";
-            this.mZerowe.Size = new System.Drawing.Size(231, 39);
+            this.mZerowe.Size = new System.Drawing.Size(354, 39);
             this.mZerowe.TabIndex = 5;
             this.mZerowe.Text = "Miejsce zerowe: ";
             // 
             // b
             // 
             this.b.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.b.Location = new System.Drawing.Point(132, 41);
+            this.b.Location = new System.Drawing.Point(43, 144);
             this.b.Name = "b";
-            this.b.Size = new System.Drawing.Size(25, 29);
+            this.b.Size = new System.Drawing.Size(91, 29);
             this.b.TabIndex = 6;
             // 
             // monotonicznosc
@@ -89,7 +91,7 @@ namespace wykresyBadowski4c
             this.monotonicznosc.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.monotonicznosc.Location = new System.Drawing.Point(12, 315);
             this.monotonicznosc.Name = "monotonicznosc";
-            this.monotonicznosc.Size = new System.Drawing.Size(231, 39);
+            this.monotonicznosc.Size = new System.Drawing.Size(354, 39);
             this.monotonicznosc.TabIndex = 7;
             this.monotonicznosc.Text = "Monotoniczność: ";
             // 
@@ -104,11 +106,31 @@ namespace wykresyBadowski4c
             this.rysuj.UseVisualStyleBackColor = true;
             this.rysuj.Click += new System.EventHandler(this.rysuj_Click);
             // 
+            // a1
+            // 
+            this.a1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.a1.Location = new System.Drawing.Point(12, 96);
+            this.a1.Name = "a1";
+            this.a1.Size = new System.Drawing.Size(25, 23);
+            this.a1.TabIndex = 9;
+            this.a1.Text = "a";
+            // 
+            // b1
+            // 
+            this.b1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.b1.Location = new System.Drawing.Point(12, 144);
+            this.b1.Name = "b1";
+            this.b1.Size = new System.Drawing.Size(25, 23);
+            this.b1.TabIndex = 11;
+            this.b1.Text = "b";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.b1);
+            this.Controls.Add(this.a1);
             this.Controls.Add(this.rysuj);
             this.Controls.Add(this.monotonicznosc);
             this.Controls.Add(this.b);
@@ -134,6 +156,8 @@ namespace wykresyBadowski4c
         private System.Windows.Forms.TextBox b;
         private System.Windows.Forms.Label monotonicznosc;
         private System.Windows.Forms.Button rysuj;
+        private System.Windows.Forms.Label a1;
+        private System.Windows.Forms.Label b1;
     }
 }
 
