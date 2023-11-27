@@ -85,8 +85,15 @@ namespace wykresyBadowski4c
             {
                 return;
             }
-            A = Convert.ToInt32(a.Text);
-            B = Convert.ToInt32(b.Text);
+            try
+            {
+                A = Convert.ToInt32(a.Text);
+                B = Convert.ToInt32(b.Text);
+            } catch
+            {
+                mZerowe.Text = "Wprowadź liczbę całkowitą";
+                return;
+            }
             double aa = Convert.ToInt32(a.Text);
             double bb = Convert.ToInt32(b.Text);
             if (A > 0)
